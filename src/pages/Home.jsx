@@ -1,4 +1,8 @@
 import React from 'react'
+import { FaPhoneFlip } from "react-icons/fa6";
+import { MdEmail } from "react-icons/md";
+import { IoLocationSharp } from "react-icons/io5";
+import eddy from '../assets/eddy.jpeg';
 
 export default function Home() {
   const year = new Date().getFullYear()
@@ -6,7 +10,7 @@ export default function Home() {
   return (
     <div className="portfolio">
       <header className="portfolio-header">
-        <div className="logo">Ismael Dlamini</div>
+        <div className="logo"> Eddy Dominguez Junior</div>
         <nav className="nav">
           <a href="#about">About</a>
           <a href="#contact">Contact</a>
@@ -18,33 +22,30 @@ export default function Home() {
           <div className="hero-image-wrap">
             <img
               className="profile-image"
-              src="https://images.pexels.com/photos/1405963/pexels-photo-1405963.jpeg"
+              src={eddy}
               alt="Ismael Dlamini"
             />
           </div>
 
           <div className="hero-content">
             <div className="eyebrow">Hello — I'm</div>
-            <h1 className="name">Ismael Dlamini</h1>
+            <h1 className="name"> Eddy Dominguez Junior</h1>
             <p className="tagline">
-              A modern web developer focused on beautiful, accessible user
-              interfaces and fast, maintainable code.
+             <FaPhoneFlip /> Phone number: +27 738057060
             </p>
 
             <p className="description">
-              I design and build responsive web applications using React,
-              sensible patterns, and a keen eye for detail. This portfolio is
-              a minimal single-page example — contact me to collaborate on
-              interesting projects.
+             <MdEmail /> Email: hotelorangecity5060@gmail.com
             </p>
 
+            
+            <p className="description">
+             <IoLocationSharp /> address: Malelane, Mpumalanga, South Africa
+            </p>
+
+
             <div className="actions">
-              <a className="btn primary" href="#contact">
-                Contact
-              </a>
-              <a className="btn ghost" href="#about">
-                Learn more
-              </a>
+              
             </div>
           </div>
         </div>
@@ -52,7 +53,7 @@ export default function Home() {
 
       <footer id="contact" className="portfolio-footer">
         <div className="footer-inner">
-          <div>© {year} Ismael Dlamini</div>
+          <div>© {year} Eddy Dominguez Junior</div>
           <div className="small">Built with React</div>
         </div>
       </footer>
